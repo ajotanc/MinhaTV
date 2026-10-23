@@ -1,0 +1,10 @@
+# Seus títulos favoritos, sempre na lista de reconhecimento da skill (um por linha).
+# Formato: Título em português | Título original (o original é opcional). Linhas com # são ignoradas.
+# Depois de editar: npm run titles
+The Boys
+O Mandaloriano | The Mandalorian
+A Lista Terminal | The Terminal List
+O Novato | The Rookie
+Bluey
+Pantanal
+Avenida Brasil

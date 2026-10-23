@@ -1,0 +1,19 @@
+name: alexa-tv
+
+services:
+  alexa-tv:
+    build: .
+    image: alexa-tv:latest
+    container_name: alexa-tv
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3333:3000"
+    volumes:
+      - adbkeys:/root/.android   # autorização do ADB na TV
+      - data:/app/data           # cache do JustWatch e a lista de títulos
+      - ./ask:/root/.ask         # token do ASK CLI (conta Amazon): não compartilhe nem comite
+
+volumes:
+  adbkeys:
+  data:

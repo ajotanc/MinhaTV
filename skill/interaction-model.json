@@ -1,0 +1,1708 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "minha t. v.",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OpenAppIntent",
+          "slots": [
+            {
+              "name": "app",
+              "type": "APP"
+            }
+          ],
+          "samples": [
+            "abrir {app}",
+            "abra {app}",
+            "abre {app}",
+            "iniciar {app}",
+            "abrir o {app}",
+            "abrir a {app}",
+            "abre o {app}",
+            "abre a {app}"
+          ]
+        },
+        {
+          "name": "CloseAppIntent",
+          "slots": [
+            {
+              "name": "app",
+              "type": "APP"
+            }
+          ],
+          "samples": [
+            "fechar {app}",
+            "feche {app}",
+            "fecha {app}",
+            "fechar o {app}",
+            "fechar a {app}",
+            "fecha o {app}",
+            "fecha a {app}"
+          ]
+        },
+        {
+          "name": "SearchIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "abrir {query}",
+            "abra {query}",
+            "abre {query}",
+            "buscar {query}",
+            "busque {query}",
+            "procurar {query}",
+            "procure {query}",
+            "assistir {query}",
+            "assista {query}",
+            "colocar {query}",
+            "coloque {query}",
+            "reproduzir {query}",
+            "reproduza {query}",
+            "tocar {query}",
+            "toque {query}",
+            "ouvir {query}",
+            "ouça {query}",
+            "abrir o filme {query}",
+            "abrir a série {query}",
+            "abra o filme {query}",
+            "abra a série {query}",
+            "abre o filme {query}",
+            "abre a série {query}"
+          ]
+        },
+        {
+          "name": "KeyIntent",
+          "slots": [
+            {
+              "name": "key",
+              "type": "KEY"
+            },
+            {
+              "name": "times",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{key}",
+            "{key} {times} vezes",
+            "{key} {times}"
+          ]
+        },
+        {
+          "name": "SeekIntent",
+          "slots": [
+            {
+              "name": "dir",
+              "type": "DIR"
+            },
+            {
+              "name": "secs",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{dir} {secs} segundos",
+            "{dir} {secs} segundo",
+            "{dir} um pouco"
+          ]
+        },
+        {
+          "name": "WatchIntent",
+          "slots": [
+            {
+              "name": "title",
+              "type": "TITLE"
+            },
+            {
+              "name": "app",
+              "type": "APP"
+            },
+            {
+              "name": "season",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "episode",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "assistir {title}",
+            "assistir {title} na {app}",
+            "assistir {title} no {app}",
+            "assistir {title} temporada {season} episódio {episode}",
+            "assistir {title} temporada {season} episódio {episode} na {app}",
+            "assistir {title} temporada {season} episódio {episode} no {app}",
+            "assista {title}",
+            "assista {title} na {app}",
+            "assista {title} no {app}",
+            "assista {title} temporada {season} episódio {episode}",
+            "assista {title} temporada {season} episódio {episode} na {app}",
+            "assista {title} temporada {season} episódio {episode} no {app}",
+            "colocar {title}",
+            "colocar {title} na {app}",
+            "colocar {title} no {app}",
+            "colocar {title} temporada {season} episódio {episode}",
+            "colocar {title} temporada {season} episódio {episode} na {app}",
+            "colocar {title} temporada {season} episódio {episode} no {app}",
+            "coloque {title}",
+            "coloque {title} na {app}",
+            "coloque {title} no {app}",
+            "coloque {title} temporada {season} episódio {episode}",
+            "coloque {title} temporada {season} episódio {episode} na {app}",
+            "coloque {title} temporada {season} episódio {episode} no {app}",
+            "reproduzir {title}",
+            "reproduzir {title} na {app}",
+            "reproduzir {title} no {app}",
+            "reproduzir {title} temporada {season} episódio {episode}",
+            "reproduzir {title} temporada {season} episódio {episode} na {app}",
+            "reproduzir {title} temporada {season} episódio {episode} no {app}",
+            "reproduza {title}",
+            "reproduza {title} na {app}",
+            "reproduza {title} no {app}",
+            "reproduza {title} temporada {season} episódio {episode}",
+            "reproduza {title} temporada {season} episódio {episode} na {app}",
+            "reproduza {title} temporada {season} episódio {episode} no {app}",
+            "abrir {title}",
+            "abrir {title} na {app}",
+            "abrir {title} no {app}",
+            "abrir {title} temporada {season} episódio {episode}",
+            "abrir {title} temporada {season} episódio {episode} na {app}",
+            "abrir {title} temporada {season} episódio {episode} no {app}",
+            "abra {title}",
+            "abra {title} na {app}",
+            "abra {title} no {app}",
+            "abra {title} temporada {season} episódio {episode}",
+            "abra {title} temporada {season} episódio {episode} na {app}",
+            "abra {title} temporada {season} episódio {episode} no {app}",
+            "abre {title}",
+            "abre {title} na {app}",
+            "abre {title} no {app}",
+            "abre {title} temporada {season} episódio {episode}",
+            "abre {title} temporada {season} episódio {episode} na {app}",
+            "abre {title} temporada {season} episódio {episode} no {app}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "APP",
+          "values": [
+            {
+              "id": "netflix",
+              "name": {
+                "value": "netflix",
+                "synonyms": [
+                  "net flix"
+                ]
+              }
+            },
+            {
+              "id": "prime",
+              "name": {
+                "value": "prime video",
+                "synonyms": [
+                  "amazon prime video",
+                  "prime vídeo",
+                  "amazon prime",
+                  "prime",
+                  "amazon",
+                  "amazon video"
+                ]
+              }
+            },
+            {
+              "id": "disney",
+              "name": {
+                "value": "disney plus",
+                "synonyms": [
+                  "disney",
+                  "disney mais",
+                  "disney+"
+                ]
+              }
+            },
+            {
+              "id": "youtube",
+              "name": {
+                "value": "youtube",
+                "synonyms": [
+                  "you tube"
+                ]
+              }
+            },
+            {
+              "id": "max",
+              "name": {
+                "value": "max",
+                "synonyms": [
+                  "hbo max",
+                  "hbo"
+                ]
+              }
+            },
+            {
+              "id": "spotify",
+              "name": {
+                "value": "spotify",
+                "synonyms": [
+                  "spotifai"
+                ]
+              }
+            },
+            {
+              "id": "globoplay",
+              "name": {
+                "value": "globoplay",
+                "synonyms": [
+                  "globo play",
+                  "globo"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "KEY",
+          "values": [
+            {
+              "id": "volume_up",
+              "name": {
+                "value": "aumentar o volume",
+                "synonyms": [
+                  "aumenta o volume",
+                  "aumentar volume",
+                  "aumenta volume",
+                  "mais volume",
+                  "volume mais",
+                  "subir o volume",
+                  "sobe o volume"
+                ]
+              }
+            },
+            {
+              "id": "volume_down",
+              "name": {
+                "value": "diminuir o volume",
+                "synonyms": [
+                  "diminui o volume",
+                  "diminuir volume",
+                  "abaixar o volume",
+                  "abaixa o volume",
+                  "menos volume",
+                  "baixar o volume",
+                  "baixa o volume"
+                ]
+              }
+            },
+            {
+              "id": "mute",
+              "name": {
+                "value": "silenciar",
+                "synonyms": [
+                  "mudo",
+                  "tirar o som",
+                  "silencia",
+                  "mutar"
+                ]
+              }
+            },
+            {
+              "id": "home",
+              "name": {
+                "value": "ir para o início",
+                "synonyms": [
+                  "início",
+                  "tela inicial",
+                  "home",
+                  "ir para a tela inicial"
+                ]
+              }
+            },
+            {
+              "id": "back",
+              "name": {
+                "value": "voltar",
+                "synonyms": [
+                  "volta",
+                  "retornar"
+                ]
+              }
+            },
+            {
+              "id": "select",
+              "name": {
+                "value": "confirmar",
+                "synonyms": [
+                  "ok",
+                  "selecionar",
+                  "seleciona",
+                  "enter",
+                  "entrar"
+                ]
+              }
+            },
+            {
+              "id": "up",
+              "name": {
+                "value": "para cima",
+                "synonyms": [
+                  "cima",
+                  "subir",
+                  "sobe"
+                ]
+              }
+            },
+            {
+              "id": "down",
+              "name": {
+                "value": "para baixo",
+                "synonyms": [
+                  "baixo",
+                  "descer",
+                  "desce"
+                ]
+              }
+            },
+            {
+              "id": "left",
+              "name": {
+                "value": "para a esquerda",
+                "synonyms": [
+                  "esquerda"
+                ]
+              }
+            },
+            {
+              "id": "right",
+              "name": {
+                "value": "para a direita",
+                "synonyms": [
+                  "direita"
+                ]
+              }
+            },
+            {
+              "id": "sleep",
+              "name": {
+                "value": "desligar",
+                "synonyms": [
+                  "desliga",
+                  "desligar a tv",
+                  "desliga a tv",
+                  "suspender"
+                ]
+              }
+            },
+            {
+              "id": "wake",
+              "name": {
+                "value": "ligar",
+                "synonyms": [
+                  "liga",
+                  "ligar a tv",
+                  "liga a tv",
+                  "acordar"
+                ]
+              }
+            },
+            {
+              "id": "pause",
+              "name": {
+                "value": "pausar",
+                "synonyms": [
+                  "pausa",
+                  "pause",
+                  "pausar o vídeo"
+                ]
+              }
+            },
+            {
+              "id": "play",
+              "name": {
+                "value": "continuar",
+                "synonyms": [
+                  "continua",
+                  "retomar",
+                  "despausar",
+                  "play",
+                  "dar play",
+                  "continuar o vídeo"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "DIR",
+          "values": [
+            {
+              "id": "seek_back",
+              "name": {
+                "value": "voltar",
+                "synonyms": [
+                  "retroceder",
+                  "recuar",
+                  "atrasar"
+                ]
+              }
+            },
+            {
+              "id": "seek_forward",
+              "name": {
+                "value": "avançar",
+                "synonyms": [
+                  "adiantar",
+                  "pular"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "TITLE",
+          "values": [
+            {
+              "id": "the_boys",
+              "name": {
+                "value": "The Boys",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_mandaloriano",
+              "name": {
+                "value": "O Mandaloriano",
+                "synonyms": [
+                  "The Mandalorian"
+                ]
+              }
+            },
+            {
+              "id": "a_lista_terminal",
+              "name": {
+                "value": "A Lista Terminal",
+                "synonyms": [
+                  "The Terminal List"
+                ]
+              }
+            },
+            {
+              "id": "o_novato",
+              "name": {
+                "value": "O Novato",
+                "synonyms": [
+                  "The Rookie"
+                ]
+              }
+            },
+            {
+              "id": "bluey",
+              "name": {
+                "value": "Bluey",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "pantanal",
+              "name": {
+                "value": "Pantanal",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "avenida_brasil",
+              "name": {
+                "value": "Avenida Brasil",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "carrie_a_estranha",
+              "name": {
+                "value": "Carrie: A Estranha",
+                "synonyms": [
+                  "Carrie"
+                ]
+              }
+            },
+            {
+              "id": "visionquest",
+              "name": {
+                "value": "VisionQuest",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "anniversary_mudanca_radical",
+              "name": {
+                "value": "Anniversary – Mudança Radical",
+                "synonyms": [
+                  "Anniversary"
+                ]
+              }
+            },
+            {
+              "id": "dragon_ball_super_beerus",
+              "name": {
+                "value": "Dragon Ball Super: Beerus",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "uma_historia_de_horror_americana",
+              "name": {
+                "value": "Uma História de Horror Americana",
+                "synonyms": [
+                  "American Horror Story"
+                ]
+              }
+            },
+            {
+              "id": "o_amor_de_sua_vida",
+              "name": {
+                "value": "O Amor de Sua Vida",
+                "synonyms": [
+                  "Love of Your Life"
+                ]
+              }
+            },
+            {
+              "id": "verdade_oculta",
+              "name": {
+                "value": "Verdade Oculta",
+                "synonyms": [
+                  "The Lowdown"
+                ]
+              }
+            },
+            {
+              "id": "o_mentalista",
+              "name": {
+                "value": "O Mentalista",
+                "synonyms": [
+                  "The Mentalist"
+                ]
+              }
+            },
+            {
+              "id": "neagley_detetive_particular",
+              "name": {
+                "value": "Neagley: Detetive Particular",
+                "synonyms": [
+                  "Neagley"
+                ]
+              }
+            },
+            {
+              "id": "reacher",
+              "name": {
+                "value": "Reacher",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "treasure_island",
+              "name": {
+                "value": "Treasure Island",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "a_hipotese_do_amor",
+              "name": {
+                "value": "A Hipótese do Amor",
+                "synonyms": [
+                  "The Love Hypothesis"
+                ]
+              }
+            },
+            {
+              "id": "farsa",
+              "name": {
+                "value": "Farsa",
+                "synonyms": [
+                  "Phony"
+                ]
+              }
+            },
+            {
+              "id": "furia",
+              "name": {
+                "value": "Fúria",
+                "synonyms": [
+                  "Furious"
+                ]
+              }
+            },
+            {
+              "id": "toy_story_5",
+              "name": {
+                "value": "Toy Story 5",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "masterplan",
+              "name": {
+                "value": "Masterplan",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "projeto_hail_mary",
+              "name": {
+                "value": "Projeto Hail Mary",
+                "synonyms": [
+                  "Project Hail Mary"
+                ]
+              }
+            },
+            {
+              "id": "ficheiros_secretos",
+              "name": {
+                "value": "Ficheiros Secretos",
+                "synonyms": [
+                  "The X-Files"
+                ]
+              }
+            },
+            {
+              "id": "apreensao",
+              "name": {
+                "value": "Apreensão",
+                "synonyms": [
+                  "Tow"
+                ]
+              }
+            },
+            {
+              "id": "a_historia_de_uma_serva",
+              "name": {
+                "value": "A História de Uma Serva",
+                "synonyms": [
+                  "The Handmaid's Tale"
+                ]
+              }
+            },
+            {
+              "id": "anatomia_de_grey",
+              "name": {
+                "value": "Anatomia de Grey",
+                "synonyms": [
+                  "Grey's Anatomy"
+                ]
+              }
+            },
+            {
+              "id": "marilia_mendonca_sentimento_louco",
+              "name": {
+                "value": "Marília Mendonça: Sentimento Louco",
+                "synonyms": [
+                  "Marília Mendonça: All the Feels"
+                ]
+              }
+            },
+            {
+              "id": "mad_men",
+              "name": {
+                "value": "Mad Men",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_genio_do_mal",
+              "name": {
+                "value": "O Génio do Mal",
+                "synonyms": [
+                  "The Omen"
+                ]
+              }
+            },
+            {
+              "id": "super_mario_galaxy_o_filme",
+              "name": {
+                "value": "Super Mario Galaxy - O Filme",
+                "synonyms": [
+                  "The Super Mario Galaxy Movie"
+                ]
+              }
+            },
+            {
+              "id": "o_acordo",
+              "name": {
+                "value": "O acordo",
+                "synonyms": [
+                  "Kde konci laska"
+                ]
+              }
+            },
+            {
+              "id": "a_terra_prometida",
+              "name": {
+                "value": "A Terra Prometida",
+                "synonyms": [
+                  "The Promised Land"
+                ]
+              }
+            },
+            {
+              "id": "hannibal",
+              "name": {
+                "value": "Hannibal",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "sobrenatural",
+              "name": {
+                "value": "Sobrenatural",
+                "synonyms": [
+                  "Supernatural"
+                ]
+              }
+            },
+            {
+              "id": "bleach_thousand_year_blood_war",
+              "name": {
+                "value": "Bleach: Thousand-Year Blood War",
+                "synonyms": [
+                  "Bleach: Sennen Kessen-hen"
+                ]
+              }
+            },
+            {
+              "id": "a_noite_de",
+              "name": {
+                "value": "A noite de",
+                "synonyms": [
+                  "The Night Of"
+                ]
+              }
+            },
+            {
+              "id": "o_urso",
+              "name": {
+                "value": "O Urso",
+                "synonyms": [
+                  "The Bear"
+                ]
+              }
+            },
+            {
+              "id": "blackberry",
+              "name": {
+                "value": "BlackBerry",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "soulm8te",
+              "name": {
+                "value": "Soulm8te",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "vicky_cristina_barcelona",
+              "name": {
+                "value": "Vicky Cristina Barcelona",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "donas_de_casa_desesperadas",
+              "name": {
+                "value": "Donas de Casa Desesperadas",
+                "synonyms": [
+                  "Desperate Housewives"
+                ]
+              }
+            },
+            {
+              "id": "lei_ordem_unidade_especial",
+              "name": {
+                "value": "Lei & Ordem: Unidade Especial",
+                "synonyms": [
+                  "Law & Order: Special Victims Unit"
+                ]
+              }
+            },
+            {
+              "id": "o_drama",
+              "name": {
+                "value": "O Drama",
+                "synonyms": [
+                  "The Drama"
+                ]
+              }
+            },
+            {
+              "id": "jujutsu_kaisen",
+              "name": {
+                "value": "Jujutsu Kaisen",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "black_clover",
+              "name": {
+                "value": "Black Clover",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_segredo_do_ourives",
+              "name": {
+                "value": "O Segredo do Ourives",
+                "synonyms": [
+                  "The Goldsmith's Secret"
+                ]
+              }
+            },
+            {
+              "id": "uma_familia_muito_moderna",
+              "name": {
+                "value": "Uma Família Muito Moderna",
+                "synonyms": [
+                  "Modern Family"
+                ]
+              }
+            },
+            {
+              "id": "amor_disfarcado",
+              "name": {
+                "value": "Amor Disfarçado",
+                "synonyms": [
+                  "Love in Disguise"
+                ]
+              }
+            },
+            {
+              "id": "quatro_leoes",
+              "name": {
+                "value": "Quatro leões",
+                "synonyms": [
+                  "Four Lions"
+                ]
+              }
+            },
+            {
+              "id": "mentes_criminosas",
+              "name": {
+                "value": "Mentes Criminosas",
+                "synonyms": [
+                  "Criminal Minds"
+                ]
+              }
+            },
+            {
+              "id": "obsessao_proibida",
+              "name": {
+                "value": "Obsessão Proibida",
+                "synonyms": [
+                  "Prohibida Obsesión"
+                ]
+              }
+            },
+            {
+              "id": "coven_academy_o_feitico_das_bruxas",
+              "name": {
+                "value": "Coven Academy: O Feitiço Das Bruxas",
+                "synonyms": [
+                  "Coven Academy"
+                ]
+              }
+            },
+            {
+              "id": "fronteiras",
+              "name": {
+                "value": "Fronteiras",
+                "synonyms": [
+                  "Fringe"
+                ]
+              }
+            },
+            {
+              "id": "amor_da_minha_vida",
+              "name": {
+                "value": "Amor da Minha Vida",
+                "synonyms": [
+                  "Benefits with Friends"
+                ]
+              }
+            },
+            {
+              "id": "the_chosen_os_escolhidos",
+              "name": {
+                "value": "The Chosen - Os Escolhidos",
+                "synonyms": [
+                  "The Chosen"
+                ]
+              }
+            },
+            {
+              "id": "o_escritorio",
+              "name": {
+                "value": "O Escritório",
+                "synonyms": [
+                  "The Office"
+                ]
+              }
+            },
+            {
+              "id": "caligula_o_corte_final",
+              "name": {
+                "value": "Calígula: O Corte Final",
+                "synonyms": [
+                  "Caligula: The Ultimate Cut"
+                ]
+              }
+            },
+            {
+              "id": "hockum_a_maldicao_oculta",
+              "name": {
+                "value": "Hockum - A Maldição Oculta",
+                "synonyms": [
+                  "Hokum"
+                ]
+              }
+            },
+            {
+              "id": "this_is_us",
+              "name": {
+                "value": "This Is Us",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "sterling_point",
+              "name": {
+                "value": "Sterling Point",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "off_campus_amores_improvaveis",
+              "name": {
+                "value": "Off Campus: Amores Improváveis",
+                "synonyms": [
+                  "Off Campus"
+                ]
+              }
+            },
+            {
+              "id": "outlander_blood_of_my_blood",
+              "name": {
+                "value": "Outlander: Blood of My Blood",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "suspiria_a_danca_do_medo",
+              "name": {
+                "value": "Suspíria: A Dança do Medo",
+                "synonyms": [
+                  "Suspiria"
+                ]
+              }
+            },
+            {
+              "id": "bugonia",
+              "name": {
+                "value": "Bugonia",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "a_crianca_do_lago",
+              "name": {
+                "value": "A criança do lago",
+                "synonyms": [
+                  "Firstborn"
+                ]
+              }
+            },
+            {
+              "id": "star_wars_o_mandaloriano_e_grogu",
+              "name": {
+                "value": "Star Wars: O Mandaloriano e Grogu",
+                "synonyms": [
+                  "The Mandalorian and Grogu"
+                ]
+              }
+            },
+            {
+              "id": "masterchef_brasil",
+              "name": {
+                "value": "Masterchef Brasil",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_que_te_mantem_viva",
+              "name": {
+                "value": "O Que Te Mantém Viva",
+                "synonyms": [
+                  "What Keeps You Alive"
+                ]
+              }
+            },
+            {
+              "id": "the_americans_rede_de_espionagem",
+              "name": {
+                "value": "The Americans: Rede de Espionagem",
+                "synonyms": [
+                  "The Americans"
+                ]
+              }
+            },
+            {
+              "id": "atracao_proibida",
+              "name": {
+                "value": "Atração Proibida",
+                "synonyms": [
+                  "Dark Woods"
+                ]
+              }
+            },
+            {
+              "id": "spider_noir",
+              "name": {
+                "value": "Spider-Noir",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "friends_sex_and_games",
+              "name": {
+                "value": "Friends Sex and Games",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "silencio",
+              "name": {
+                "value": "Silêncio",
+                "synonyms": [
+                  "Silence"
+                ]
+              }
+            },
+            {
+              "id": "o_chefe_infernal",
+              "name": {
+                "value": "O Chefe Infernal",
+                "synonyms": [
+                  "Helluva Boss"
+                ]
+              }
+            },
+            {
+              "id": "nuremberga",
+              "name": {
+                "value": "Nuremberga",
+                "synonyms": [
+                  "Nuremberg"
+                ]
+              }
+            },
+            {
+              "id": "the_hunting_party",
+              "name": {
+                "value": "The Hunting Party",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "paradise",
+              "name": {
+                "value": "Paradise",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "adultos",
+              "name": {
+                "value": "Adultos",
+                "synonyms": [
+                  "Adults"
+                ]
+              }
+            },
+            {
+              "id": "summerland_o_verao_das_nossas_vidas",
+              "name": {
+                "value": "Summerland - O Verão das Nossas Vidas",
+                "synonyms": [
+                  "Summerland"
+                ]
+              }
+            },
+            {
+              "id": "the_walking_dead",
+              "name": {
+                "value": "The Walking Dead",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "abbott_elementary",
+              "name": {
+                "value": "Abbott Elementary",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "vaiana",
+              "name": {
+                "value": "Vaiana",
+                "synonyms": [
+                  "Moana"
+                ]
+              }
+            },
+            {
+              "id": "demon_slayer_kimetsu_no_yaiba_castelo_infinito",
+              "name": {
+                "value": "Demon Slayer: Kimetsu no Yaiba Castelo Infinito",
+                "synonyms": [
+                  "Demon Slayer: Kimetsu no Yaiba Infinity Castle"
+                ]
+              }
+            },
+            {
+              "id": "chicago_p_d",
+              "name": {
+                "value": "Chicago P.D.",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "9_1_1",
+              "name": {
+                "value": "9-1-1",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_diabo_veste_prada_2",
+              "name": {
+                "value": "O Diabo Veste Prada 2",
+                "synonyms": [
+                  "The Devil Wears Prada 2"
+                ]
+              }
+            },
+            {
+              "id": "daemons_do_reino_das_sombras",
+              "name": {
+                "value": "Daemons do Reino das Sombras",
+                "synonyms": [
+                  "Daemons of the Shadow Realm"
+                ]
+              }
+            },
+            {
+              "id": "os_simpsons",
+              "name": {
+                "value": "Os Simpsons",
+                "synonyms": [
+                  "The Simpsons"
+                ]
+              }
+            },
+            {
+              "id": "the_walking_dead_dead_city",
+              "name": {
+                "value": "The Walking Dead: Dead City",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "suits_homens_de_terno",
+              "name": {
+                "value": "Suits - Homens de Terno",
+                "synonyms": [
+                  "Suits"
+                ]
+              }
+            },
+            {
+              "id": "percy_jackson",
+              "name": {
+                "value": "Percy Jackson",
+                "synonyms": [
+                  "Percy Jackson and the Olympians"
+                ]
+              }
+            },
+            {
+              "id": "um_conto_sombrio",
+              "name": {
+                "value": "Um Conto Sombrio",
+                "synonyms": [
+                  "Rumpelstiltskin"
+                ]
+              }
+            },
+            {
+              "id": "perdidos",
+              "name": {
+                "value": "Perdidos",
+                "synonyms": [
+                  "Lost"
+                ]
+              }
+            },
+            {
+              "id": "the_revenant_o_renascido",
+              "name": {
+                "value": "The Revenant: O Renascido",
+                "synonyms": [
+                  "The Revenant"
+                ]
+              }
+            },
+            {
+              "id": "the_strain_noite_absoluta",
+              "name": {
+                "value": "The Strain: Noite Absoluta",
+                "synonyms": [
+                  "The Strain"
+                ]
+              }
+            },
+            {
+              "id": "chicago_fire",
+              "name": {
+                "value": "Chicago Fire",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "fleabag",
+              "name": {
+                "value": "Fleabag",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "o_jogo_da_imitacao",
+              "name": {
+                "value": "O Jogo da Imitação",
+                "synonyms": [
+                  "The Imitation Game"
+                ]
+              }
+            },
+            {
+              "id": "chad_powers_o_quarterback",
+              "name": {
+                "value": "Chad Powers: O Quarterback",
+                "synonyms": [
+                  "Chad Powers"
+                ]
+              }
+            },
+            {
+              "id": "bom_comportamento",
+              "name": {
+                "value": "Bom Comportamento",
+                "synonyms": [
+                  "Good Time"
+                ]
+              }
+            },
+            {
+              "id": "miyamoto_musashi_e_os_400_samurais",
+              "name": {
+                "value": "Miyamoto Musashi e os 400 Samurais",
+                "synonyms": [
+                  "Kyô Samurai Musashi"
+                ]
+              }
+            },
+            {
+              "id": "em_zona_cinzenta",
+              "name": {
+                "value": "Em Zona Cinzenta",
+                "synonyms": [
+                  "In the Grey"
+                ]
+              }
+            },
+            {
+              "id": "o_rei_perdido",
+              "name": {
+                "value": "O Rei Perdido",
+                "synonyms": [
+                  "The Lost King"
+                ]
+              }
+            },
+            {
+              "id": "no_limite",
+              "name": {
+                "value": "No Limite",
+                "synonyms": [
+                  "Shameless"
+                ]
+              }
+            },
+            {
+              "id": "o_homem_do_castelo_alto",
+              "name": {
+                "value": "O Homem do Castelo Alto",
+                "synonyms": [
+                  "The Man in the High Castle"
+                ]
+              }
+            },
+            {
+              "id": "hamnet_a_vida_antes_de_hamlet",
+              "name": {
+                "value": "Hamnet: A Vida Antes de Hamlet",
+                "synonyms": [
+                  "Hamnet"
+                ]
+              }
+            },
+            {
+              "id": "dr_house",
+              "name": {
+                "value": "Dr. House",
+                "synonyms": [
+                  "House"
+                ]
+              }
+            },
+            {
+              "id": "carrie_a_estranha_",
+              "name": {
+                "value": "Carrie, a Estranha",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "entrevista_com_o_vampiro",
+              "name": {
+                "value": "Entrevista com o Vampiro",
+                "synonyms": [
+                  "Interview with the Vampire"
+                ]
+              }
+            },
+            {
+              "id": "a_vida_de_chuck",
+              "name": {
+                "value": "A Vida de Chuck",
+                "synonyms": [
+                  "The Life of Chuck"
+                ]
+              }
+            },
+            {
+              "id": "as_ovelhas_detetives",
+              "name": {
+                "value": "As Ovelhas Detetives",
+                "synonyms": [
+                  "The Sheep Detectives"
+                ]
+              }
+            },
+            {
+              "id": "dois_homens_e_meio",
+              "name": {
+                "value": "Dois Homens e Meio",
+                "synonyms": [
+                  "Two and a Half Men"
+                ]
+              }
+            },
+            {
+              "id": "letras_roubadas",
+              "name": {
+                "value": "Letras Roubadas",
+                "synonyms": [
+                  "Power Ballad"
+                ]
+              }
+            },
+            {
+              "id": "fallout",
+              "name": {
+                "value": "Fallout",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "sozinha_em_toquio",
+              "name": {
+                "value": "Sózinha em Tóquio",
+                "synonyms": [
+                  "The Ramen Girl"
+                ]
+              }
+            },
+            {
+              "id": "tal_mae_tal_filha",
+              "name": {
+                "value": "Tal Mãe, Tal Filha",
+                "synonyms": [
+                  "Gilmore Girls"
+                ]
+              }
+            },
+            {
+              "id": "marvel_demolidor",
+              "name": {
+                "value": "Marvel - Demolidor",
+                "synonyms": [
+                  "Marvel's Daredevil"
+                ]
+              }
+            },
+            {
+              "id": "uma_mente_excepcional",
+              "name": {
+                "value": "Uma Mente Excepcional",
+                "synonyms": [
+                  "High Potential"
+                ]
+              }
+            },
+            {
+              "id": "interestelar",
+              "name": {
+                "value": "Interestelar",
+                "synonyms": [
+                  "Interstellar"
+                ]
+              }
+            },
+            {
+              "id": "rainha_vermelha",
+              "name": {
+                "value": "Rainha Vermelha",
+                "synonyms": [
+                  "Red Queen"
+                ]
+              }
+            },
+            {
+              "id": "estilhacos",
+              "name": {
+                "value": "Estilhaços",
+                "synonyms": [
+                  "The Shards"
+                ]
+              }
+            },
+            {
+              "id": "kimetsu_no_yaiba_guardioes_da_noite",
+              "name": {
+                "value": "Kimetsu no Yaiba: Guardiões da Noite",
+                "synonyms": [
+                  "Kimetsu no Yaiba"
+                ]
+              }
+            },
+            {
+              "id": "outlander",
+              "name": {
+                "value": "Outlander",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "todos_contra_o_chris",
+              "name": {
+                "value": "Todos Contra o Chris",
+                "synonyms": [
+                  "Everybody Hates Chris"
+                ]
+              }
+            },
+            {
+              "id": "sol_de_inverno",
+              "name": {
+                "value": "Sol de Inverno",
+                "synonyms": [
+                  "Boku no ohisama"
+                ]
+              }
+            },
+            {
+              "id": "fargo",
+              "name": {
+                "value": "Fargo",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "pokemon",
+              "name": {
+                "value": "Pokémon",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "atraidos_pelo_destino",
+              "name": {
+                "value": "Atraídos pelo Destino",
+                "synonyms": [
+                  "Enfrentados: Marfil"
+                ]
+              }
+            },
+            {
+              "id": "x_men_97",
+              "name": {
+                "value": "X-Men '97",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "sexta_feira_13",
+              "name": {
+                "value": "Sexta-Feira 13",
+                "synonyms": [
+                  "Friday the 13th"
+                ]
+              }
+            },
+            {
+              "id": "diarios_do_vampiro",
+              "name": {
+                "value": "Diários do Vampiro",
+                "synonyms": [
+                  "The Vampire Diaries"
+                ]
+              }
+            },
+            {
+              "id": "tres_estranhos",
+              "name": {
+                "value": "Três Estranhos",
+                "synonyms": [
+                  "Tres Extraños"
+                ]
+              }
+            },
+            {
+              "id": "loki",
+              "name": {
+                "value": "Loki",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "fuze_explosao_iminente",
+              "name": {
+                "value": "Fuze: Explosão Iminente",
+                "synonyms": [
+                  "Fuze"
+                ]
+              }
+            },
+            {
+              "id": "socorro",
+              "name": {
+                "value": "Socorro!",
+                "synonyms": [
+                  "Send Help"
+                ]
+              }
+            },
+            {
+              "id": "o_dia_do_chacal",
+              "name": {
+                "value": "O Dia do Chacal",
+                "synonyms": [
+                  "The Day of the Jackal"
+                ]
+              }
+            },
+            {
+              "id": "rocky_um_lutador",
+              "name": {
+                "value": "Rocky, um Lutador",
+                "synonyms": [
+                  "Rocky"
+                ]
+              }
+            },
+            {
+              "id": "the_dropout_a_historia_de_uma_fraude",
+              "name": {
+                "value": "The Dropout: A História de uma Fraude",
+                "synonyms": [
+                  "The Dropout"
+                ]
+              }
+            },
+            {
+              "id": "futurama",
+              "name": {
+                "value": "Futurama",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "tracker_em_perseguicao",
+              "name": {
+                "value": "Tracker: Em Perseguição",
+                "synonyms": [
+                  "Tracker"
+                ]
+              }
+            },
+            {
+              "id": "mare_escura",
+              "name": {
+                "value": "Maré escura",
+                "synonyms": [
+                  "EB"
+                ]
+              }
+            },
+            {
+              "id": "tres_cartazes_a_beira_da_estrada",
+              "name": {
+                "value": "Três Cartazes à Beira da Estrada",
+                "synonyms": [
+                  "Three Billboards Outside Ebbing, Missouri"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
