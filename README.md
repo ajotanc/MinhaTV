@@ -40,7 +40,7 @@ Configurações → Sobre → clique 7 vezes em "Build" → Opções do desenvol
 ### 2. Configuração
 
 ```bash
-git clone <este-repositorio> alexa-tv && cd alexa-tv
+git clone <url-deste-repositorio> alexa-tv && cd alexa-tv
 cp .env.example .env
 ```
 
@@ -154,4 +154,8 @@ npm run build && npm start
 
 Estrutura: `src/server.ts` (skill e endpoints), `src/tv.ts` (ADB), `src/apps.ts` (apps e parser), `src/justwatch.ts`, `src/youtube.ts`, `src/spotify.ts`, `src/screen.ts` (detector de perfil), `src/titles.ts` e `src/model-update.ts` (lista de títulos), `skill/` (modelo de interação).
 
-Contribuições são bem-vindas, principalmente calibrações de outros apps e aparelhos. Adicione uma licença (`LICENSE`) antes de publicar.
+Contribuições são bem-vindas, principalmente calibrações de outros apps e aparelhos.
+
+## Licença
+
+[MIT](LICENSE). Projeto não oficial, sem ligação com Amazon, Xiaomi, JustWatch nem com os serviços de streaming citados; os nomes pertencem aos seus donos.
